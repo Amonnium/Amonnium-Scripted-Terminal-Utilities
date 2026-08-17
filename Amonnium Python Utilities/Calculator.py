@@ -1,15 +1,19 @@
-number1 = input('Enter the num ')
-num1 = int(number1)
-sign = input('Enter the sign ')
-number2 = input('Enter the number ')
-num2 = int(number2)
-if sign == '+':
-    print('Your result is ' + str(num1 +num2))
-elif sign == '-':
-    print('Your result is ' + str(num1 -num2))
-elif sign == '*':
-    print('Your result is ' + str(num1 *num2))
-elif sign == '/':
-    print('Your result is ' + str(num1 /num2))
+
+operator = input("Enter an operator (+ - * /): ")
+num1 = float(input("Enter the 1st number: "))
+num2 = float(input("Enter the 2nd number: "))
+
+if operator == "+":
+    result = num1 + num2
+    print(round(result, 3))
+elif operator == "-":
+    result = num1 - num2
+    print(round(result, 3))
+elif operator == "*":
+    result = num1 * num2
+    print(round(result, 3))
+elif operator == "/":
+    result = num1 / num2
+    print(round(result, 3))
 else:
-    print('please enter + , - , * or /')
+    print(f"{operator} is not a valid operator")
