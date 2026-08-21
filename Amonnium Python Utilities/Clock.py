@@ -1,3 +1,13 @@
 import time
 
-while True: print(time.strftime("%H:%M:%S"), end="\r") or time.sleep(1)
+
+def clock():
+  t = time.strftime("%H:%M:%S")
+  print(
+    f"Time = {t}\r",
+    end=""
+  )
+
+while True:
+  clock()
+  time.sleep(1)
